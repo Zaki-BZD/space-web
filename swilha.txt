@@ -1,0 +1,66 @@
+steps:
+(you can create your all properties first from the file of the typography and compenentes start)
+1-reset properties
+   (1-box-sizing #{*,*::before,*::after {box-sizing: border-box;}
+    2-reset margin #/* https://piccalil.li/blog/a-modern-css-reset/ 
+    3- set up the body #body {line-height: 1.5;min-height: 100vh;}
+    4-make images easier to work with #img,picutre {    max-width: 100%;    display: block;}
+    5- make form elements easier to work with #*/input,button,textarea,select {    font: inherit;}
+    6-/* remove animations for people who've turned them off */hadi mliha laccebility khtrch kyn nas ydirnjihm animation wtransition aya gal3inh hadi tgl3h llnas ligl3ath
+
+    # @media (prefers-reduced-motion: reduce) {  
+    #   *,
+    #   *::before,
+    #   *::after {
+    #     animation-duration: 0.01ms !important;
+    #     animation-iteration-count: 1 !important;
+    #     transition-duration: 0.01ms !important;
+    #     scroll-behavior: auto !important;
+    #   }
+    # }
+    )
+2-Utility classes
+  (1-flex and grid
+#   .flex {
+#     display: flex;
+#     gap: var(--gap, 1rem);//variable mnkonoch dayrinh fl varaibles ndiroh flblas lytbdl fiha gap
+# }
+  2-container
+  3-color utility classes
+    (first dirhm variables wdakhl variable dir ghi values ex 
+    #--clr-dark: 230 35% 7%; dir had 3fsa khtrch mb3d kykon 3ndk color nfsh bopacity mbdla tcryi ghi class jdida wdir fiha kima hak
+    #background-color: hsl(150 77% 90% / .1);
+    second create calsees llbackground color wltext color ex
+    # .bg-dark { background-color: hsl( var(--clr-dark) );}
+    # .text-dark { color: hsl( var(--clr-dark) );}
+    )
+  4-typography
+    (-first create font families and font size variables ex fl font size
+    # --fs-900: 9.375rem;/font size yjo brem khir khtrch kon syd ykon modifier flfont size wzoom wlbrowser ta3h pixels rah ydiro mchakl
+    # --fs-800: 6.25rem;
+    # --fs-700: 3.5rem;
+    # --fs-600: 2rem;
+    # --fs-500: 1.75rem;
+    # --fs-400: 1.125rem;
+    # --fs-300: 1rem;
+    # --fs-200: 0.875rem;
+    )
+    -then create classes lkol font size wfamily wclass fih uppercse wida kan letter spacing ytbdl heta hwa dirlh classes
+    wdir fibalk lkhtota lkbar khsk tfixilho line hieight khtrch yzid wywli dayr kizbi
+    and lazm utility class ta3 body tzida font size wfamily ta3 paragraph khtrch hya litt3wd bzaf
+    
+  )
+-3 Compontents  
+notes:
+-custom properties are fire
+-utility classes will allow us save time
+-flutility classes mdarch ga3 properties fl button likaynyn futilty classes darha blclass mchi ki headings
+khtrch belek dir button tbdl fih ghi size wele color aya tbdl ghi clasess bch tkryilh class jdida
+-aspect ratio =width /height
+-place items shorthand ta3 justify content w align items
+-html ykonl desktop first but scc mobilw first
+-inset = top right bottom left
+-always put the media after your code
+-defer chghl fayda ta3h hya kit7ot script file fog mydirch error khtrh ytsna page heta tloada
+ideas:
+-navigation
